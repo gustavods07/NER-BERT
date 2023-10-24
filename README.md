@@ -9,5 +9,4 @@ Para solucionar o problema, o script _BERT_NER_RECONSTRUCAO.py_ aplica tratament
 
 ¹https://huggingface.co/pierreguillou/ner-bert-large-cased-pt-lenerbr
 
-
 ²https://huggingface.co/datasets/lener_br
