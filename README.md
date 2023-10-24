@@ -8,4 +8,6 @@ Por exemplo, o nome Ântonio José da Costa e Silva poderia ser reconhecido como
 Para solucionar o problema, o script _BERT_NER_RECONSTRUCAO.py_ aplica tratamentos de texto após a identificação das entidades PESSOA e ORGANIZAÇÃO via pipeline. A metodologia é simples porém efetiva: tokens vizinhos reconhecidos como entidades do mesmo tipo são agregados e posteriormente agrupados em listas (uma lista para pessoas e outra lista para organizações)
 
 ¹https://huggingface.co/pierreguillou/ner-bert-large-cased-pt-lenerbr
+
+
 ²https://huggingface.co/datasets/lener_br
