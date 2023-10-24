@@ -5,7 +5,11 @@ Entretanto, durante o processo de reconhecimento, algumas palavras não existent
 
 Por exemplo, o nome _Ântonio José da Costa e Silva_ poderia ser reconhecido como duas entidades distintas: _'Antonio Jo'_ e _'sé da Costa e Silva'_ prejudicando a acurácia prática ao tentar recuperar os nomes das pessoas citadas em um documento.
 
-Para solucionar o problema, o script _BERT_NER_RECONSTRUCAO.py_ aplica tratamentos de texto após a identificação das entidades PESSOA e ORGANIZAÇÃO via pipeline. A metodologia é simples porém efetiva: tokens vizinhos reconhecidos como entidades do mesmo tipo são agregados e posteriormente agrupados em listas (uma lista para pessoas e outra lista para organizações)
+Para solucionar o problema, o script _BERT_NER_RECONSTRUCAO.py_ aplica tratamentos de texto após a identificação das entidades PESSOA e ORGANIZAÇÃO via pipeline. 
+
+A metodologia é simples porém efetiva: 
+- tokens vizinhos reconhecidos como entidades do mesmo tipo são agregados como parte da mesma entidade;
+- Entidades são agrupadas em listas de acordo com o _label_ (uma lista para pessoas e outra lista para organizações).
 
 ¹https://huggingface.co/pierreguillou/ner-bert-large-cased-pt-lenerbr
 
